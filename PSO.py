@@ -1,7 +1,7 @@
 from tkinter import *
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 from matplotlib.figure import Figure
 from sklearn.datasets import make_circles
 import random as rand
@@ -73,8 +73,8 @@ class PSO:
           self.root.mainloop()
 
       def infomsg(self):
-          import tkMessageBox
-          tkMessageBox.showinfo("Info", "Define algorithm's parameteres and click to the canvas to start PSO procedure.")
+          import tkinter.messagebox
+          tkinter.messagebox.showinfo("Info", "Define algorithm's parameteres and click to the canvas to start PSO procedure.")
           
       def illustrate_pso(self,event):
             self.x=event.xdata
